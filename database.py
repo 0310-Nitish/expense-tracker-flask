@@ -32,8 +32,7 @@ def init_db():
 
 
 def add_transaction(t, c, a, d, dt):
-    print("Inside add_transaction()")
-
+    
     conn = sqlite3.connect(DATABASE)
 
     cur = conn.cursor()
@@ -43,10 +42,10 @@ def add_transaction(t, c, a, d, dt):
         VALUES (?, ?, ?, ?, ?)
     """, (t, c, a, d, dt))
 
-    print("Rows affected:", cur.rowcount)
+
 
     conn.commit()
-    print("Committed Successfully")
+    
 
     conn.close()
 
@@ -73,14 +72,13 @@ def get_transactions(search="", category="", date=""):
 
     query += " ORDER BY id DESC"
 
-    print("SQL Query:", query)
-    print("Params:", params)
+    
 
     cur.execute(query, params)
 
     rows = cur.fetchall()
 
-    print("Rows:", rows)
+    
 
     conn.close()
 

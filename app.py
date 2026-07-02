@@ -81,9 +81,7 @@ def home():
     search = request.args.get("search", "")
     category = request.args.get("category", "")
     date = request.args.get("date", "")
-    # print("Search =", repr(search))
-    # print("Category =", repr(category))
-
+    
     transactions = get_transactions(search, category, date)
     category_summary = get_category_summary()
 
@@ -132,11 +130,7 @@ def add():
         dt = request.form["date"]
         add_transaction(t, c, a, d, dt)
 
-        # print("Type:", t)
-        # print("Category:", c)
-        # print("Amount:", a)
-        # print("Description:", d)
-        # print("Date:", dt)
+    
 
     return render_template("add.html")
 
