@@ -59,8 +59,8 @@ def get_transactions(search="", category="", date=""):
     params = []
 
     if search:
-        query += " AND category LIKE ?"
-        params.append("%" + search + "%")
+        query += " AND LOWER(TRIM(category)) LIKE ?"
+        params.append("%" + search.lower().strip() + "%")
 
     if category:
         query += " AND TRIM(category) = ?"
