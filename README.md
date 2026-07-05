@@ -8,7 +8,7 @@ A responsive personal finance management web application built using Flask, SQLi
 
 ## GitHub Repository
 
-https://github.com/0310-Rishabh/expense-tracker-flask
+https://github.com/0310-Nitish/expense-tracker-flask
 
 ---
 
@@ -43,7 +43,7 @@ https://github.com/0310-Rishabh/expense-tracker-flask
 ## Installation
 
 ```bash
-git clone https://github.com/0310-Rishabh/expense-tracker-flask.git
+git clone https://github.com/0310-Nitish/expense-tracker-flask.git
 
 cd expense-tracker-flask
 
@@ -105,4 +105,4 @@ This project is developed for educational purposes.
 
 ## Author
 
-Rishabh  Bhardwaj 
+Nitish Kumar Saini
